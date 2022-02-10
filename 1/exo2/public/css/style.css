@@ -1,0 +1,39 @@
+body{
+    width:100%;
+    background-color: rgb(45, 45, 45);
+    color: #ede9d0;
+}
+*{
+    box-sizing: border-box;
+}
+
+table{
+    border: 2px solid#ede9d0;
+}
+
+td{
+    border: 1px solid grey;
+    padding:10px;
+    height:100px;
+    width:100px;
+}
+
+.uno{
+    background-color:#ffcfff;
+}
+
+.dos{
+    background-color:#c6bcf9;
+}
+.tres{
+    background-color: #7dabea;
+}
+.quatro{
+    background-color: #009acd;
+}
+.cinqo{
+    background-color: #0087a2;
+}
+.siete{
+    background-color: #00706c;
+}

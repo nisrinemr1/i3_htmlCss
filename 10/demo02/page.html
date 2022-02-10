@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappel!</title> 
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- toujours mettre jquery au dessus de bootstrap! -->
+    <script src="js/bootstrap.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+       <h2>Deux grilles avec les margins</h2>
+       <div class="row">
+            <div class="col-6">
+                <div class="row">
+                <div class="col elem1 mx-1">Nini</div>
+                <div class="col elem2">Fifi</div>
+                <div class="col elem1 mx-1">Kiki</div>
+            </div>
+        </div>
+
+           
+           <div class="col-3 p-0">
+               <div class="elem2 mx-1">Zaza</div>
+               <!-- a gauche à droite -->
+           </div>
+           <div class="col-3 p-0">
+               <div class="elem3 ml-1 mr-2">Della</div>
+            </div>
+            <!-- total est 12! -->
+        </div>
+        
+        <h2>Ordre customiser</h2>
+        <!-- ordre affichage 4132 -->
+        <div class="row">
+            <!-- pas possible de mettre des margins et paddings entre les cols et les rows! -->
+            <div class="col-3 elem1 order-4">Element 1 </div>
+            <div class="col-3 elem2 order-11">Element 2 </div>
+            <div class="col-3 elem1 order-8">Element 3 </div>
+            <!-- vu qu'il n'a pas d'ordre, il sera le premier -->
+            <div class="col-3 elem2 order-2">Element 4 </div>
+        </div>
+        <!-- ordre affichage  4 2 3 1 -->
+        <div class="row">
+            <div class="col-3 elem1 order-last mt-2">Element 1 </div>
+            <!-- automatiquement il fait un order 13, meme s'il y a le 12! -->
+            <div class="col-3 elem2 order-1 mt-2">Element 2 </div>
+            <div class="col-3 elem1 order-12 mt-2">Element 3 </div>
+            <div class="col-3 elem2 order-first mt-2">Element 4 </div>
+        </div>
+   </div> 
+</body>
+</html>

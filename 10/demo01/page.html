@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo boostrap 4.6</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- toujours mettre jquery au dessus de bootstrap! -->
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <h1>Demo boostrap 4.6</h1>
+    <h3>Système de layout "container" Warning Dépendence avec jQuery!! (ps: pas avec bootstrap version 5)</h3>
+
+    <div class="container">
+        <h3>Colone de taille identique</h3>
+        <div class="elem1">Hello</div>
+        <div class="elem2">Riri</div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="elem3">Fifi</div>
+        <div class="elem4">Zaza</div>
+    </div>
+    <!-- taille définit par bootstrap. Il faut mettre ces div pour qu'elles s'affichent. -->
+    <!-- si on ve -->
+
+    <div class="container-lg">
+        <!-- quand l'ecran est un peut plus petit il prendra comme le fluid -->
+        <!-- pas besoin de les connaître, il faut juste chercher dans la doc de bootstrap il y aura la grille des tailles de grid!! si on veut container-fluid sera toujour à 100% et ça remplace les medias queries!!!!!!!!!!! -->
+        <div class="elem1">Archibald</div>
+        <div class="elem2">Tonton</div>
+    </div>
+    <!-- les système de grilles! -->
+    <!-- pas mettre dans les mêmes div sinon fonctionne pas -->
+    <div class="container">
+        <h2>Les système de grilles!</h2>
+        <!-- colonnes de tailles identiques! -->
+        <div class="row">
+            <div class="col elem1">Riri Duck</div>
+            <div class="col elem2">Zaza Vanderquack</div>
+            <div class="col elem3">Donald Duck</div>
+            <div class="col elem4">Della Duck</div>
+        </div>
+
+        <div class="row">
+            <!-- système de 12 (points d'espaces sur une ligne) colonnes sur une lignes -->
+            <div class="col-2 elem1">Duck</div>
+            <div class="col-5 elem2">
+                Vanderquack</div>
+            <div class="col-3 elem3">Mouse</div>
+            <div class="col-2 elem4">Picsou</div>
+            <!-- on va jouer avec les tailles des colones! si on ajoute plus, il va se mettre à la ligne automatiquement! meme si l'ecran est plus large il ne se mettra pas sur la meme ligne, il restera à 12 colones!!!! -->
+            <!-- va passer à la ligne directement à la page 12 et pas possible de modifiger, bootstrap gardera toujours 12 lignes.-->
+            <div class="col-2 elem1">Titi</div>
+            <div class="col-5 elem2">
+                Somthing</div>
+        </div>
+
+        <h3>Système de grille responsive</h3>
+
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem1">1</div>
+            <!-- col 6 c'est pour faire un tableau de 2 colonnes -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem2">2</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem3">3</div>
+            <!-- prennent 4/12 point -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem4">4</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem5">5</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem3">6</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem2">7</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1  elem1">8</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem5">9</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem4">10</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem3">11</div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-1 elem1">12</div>
+            <!-- ça fait 2colones -->
+        </div>
+
+
+        <h3>Les offsets</h3>
+        <div class="row">
+            <div class="col-3 elem1">Riri Duck</div>
+            <div class="col-3 offset-2 elem2">Zaza Vanderquack</div>
+        </div>
+
+        <div class="row">
+            <div class="col-5 col-lg-4 elem1">Sushi</div>
+            <div class="col-5 col-lg-4 offset-2 offset-2 offset-lg-6 elem2">Maki</div>
+        </div>
+
+        <h3>Les margins et les paddings</h3>
+        <!-- https://getbootstrap.com/docs/4.6/utilities/spacing/ -->
+        <div class="row">
+            <div class="m-3 elem4"> Coucou Margin 3</div>
+            <div class="pt-3 elem1"> Coucou Padding top3</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

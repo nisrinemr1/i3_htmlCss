@@ -1,0 +1,71 @@
+*{
+   box-sizing: border-box; 
+}
+
+html{
+    font-size:15px;
+}
+
+body{
+    width: 100%;
+    padding:0;
+    margin:auto;
+    height:700px;
+    background-color:rgb(32, 33, 36);
+}
+
+section#contour{
+    width: 50%;
+    height:700px;
+    border:5px solid violet;
+    margin: auto;
+    padding:30px;
+    padding-bottom: 50px;
+}
+/* 
+div{
+    /* border-radius: 20px; */
+    /* ça m'a fait un rendu arrondi sur le bord */
+   /* border-radius: 10px; */ 
+    /* ça fera l'affaire. */
+    /* border: 3px solid wheat; */
+    /* padding: 20px; */
+    /*
+} */
+
+
+/* border: 3px solid wheat;
+    border-radius: 10px; */
+
+
+section.top, .middle, .bottom, .asideLeftTop, .asideRightTop, .asideLeftBottom, .asideRightBottom{
+    border: 3px solid wheat;
+    border-radius: 10px;
+    margin: -2px;
+}
+
+section.top, .middle, .bottom {
+    width: 100%;
+    padding: 5%;
+    float: left; 
+       
+} 
+
+section.asideLeftTop, .asideLeftBottom{
+    width: 10%;
+    float:left;
+}
+
+section.asideRightTop, .asideRightBottom{
+    width: 10%;
+    float:right;
+}
+
+aside{
+    height:200px;
+}
+
+section:hover #hoverc{
+    background-color: indigo;
+}
+/* il fallait que je fasse autrement. En mettant le hover après il aurait afficher la couleurs sur chaque case lorsque je survole ma souris, mais en le mettant après section et mit le #hoverc après le hover m'a permis d'avoir le résultat souhaité à savoir, faire  */

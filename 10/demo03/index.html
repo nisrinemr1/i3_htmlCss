@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hellooow</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+   <div class="container">
+       <!-- pour avoir la margin auto!² -->
+        <!-- avec le $ permet de mettre 1 2 3 4 ...  -->
+        <h1>J'aime pas ce clavier... -_-</h1>
+        <div class="h1"> J'aime pas ce clavier... -_-</div>
+        <!-- Il fait automatiquement qui est enregistrer dans le bootstrap.css -->
+
+        <div class="display-4 text-center">Hello ^^</div>
+        <!-- display (pour la taille) 4 est le plus petit! y a que de 1 à 4 -->
+        <div class="display-3">Hello ^^</div>
+        <div class="display-2">Hello ^^</div>
+        <div class="display-1">Hello ^^</div>
+    
+        <blockquote class="blockquote">
+        <!-- balise pour mettre des sitations pour les sourds! permet d'améliorer la quialité de la structure-->
+            <p class="french-quote mb-0">Mangez des pommes</p>
+            <footer class="blockquote-footer"> <cite> Chirac</cite> dans les guignols</footer>
+            <!-- C EST PLUS BEAU AVEC BOOTSTRAP!!! -->
+            <!-- Pour l'auteur -->
+            <cite>La mer est bleue, la terre est verte, ta braguette elle est ouverte.</cite>
+        </blockquote>
+        <!-- before on l'utilise en css ::before permet de rajouter (le tiret) il y a aussi ::after. permet d'ajouter des symboles par le css et sera plus léger! bon on peut mettre tout et n'importe quoi!-->
+        
+        
+        <ul class="list-unstyled">
+            <!-- pour retirer les points! avec une classe="list-unstyled". On va les utiliser pour faire nav barres, mais après.-->
+            <li>Doudou</li>
+            <li>Leïlou</li>
+            <li>Chachou</li>
+        </ul>
+        
+        <!-- Maintenant on va les mettres cote à cote. aligner sur une seule ligne. Les displayblock feront des sauts de lignes! laisser le br uniquement dans le paragraphe! il faut utiliser d'avantage des rem et em pour les textes pour qu'il soit responsive! -->
+        <ul class="list-inline">
+            <li class="list-inline-item">Titi</li>
+            <li class="list-inline-item">Hamtaro</li>
+            <li class="list-inline-item">Zayn</li>
+        </ul>
+    
+        
+        <h3>Modification de la classe</h3>
+        <p class="text-uppercase">Titi</p>
+        <p class="text-lowercase">Hamtaro</p>
+        <p class="text-capitalize">Zayn Cookie</p>
+    
+        
+        <h3>Gras et italic</h3>
+        <p class="font-weight-bold">Dongsaeng</p>
+        <p class="font-weight-normal">Oemma</p>
+        <p class="font-weight-light">Appa</p>
+        <p class="font-italic">Oppa</p>
+    
+        <h3>Les couleurs</h3>
+        <p class="text-primary">Couleur primaire</p>
+        <p class="text-secondary">Couleur secondaire</p>
+        <p class="text-success">Couleur succes</p>
+        <p class="text-danger">Couleur en cas d'erreur</p>
+        <p class="text-warning">Couleur en cas de risque d'erreur</p>
+        <p class="bg-primary">background "primaire"</p>
+        <p class="text-light bg-dark">Hellow</p>
+        <a href="https://getbootstrap.com/docs/4.0/utilities/colors/" class="text-info">Pour plus d'infos sur les couleurs sur bootstrap</a>
+
+
+
+        <h3>Les boutons!</h3>
+        <div class="row">
+            <div class="col-4 m-3">
+            <input class="btn btn-primary" type="button" value="APPUIE!">
+            </div>
+            <div class="offset-1 col-4 m-3">
+                <button class="btn btn-info">Boutton 2</button>
+            </div>
+            <div class="w-100"></div>
+            <!-- Saut de ligne dans grilles!! -->
+            <div class="col-1 mb-3">Test</div>
+            <div class="w-100"></div>
+            <a href="https://unicode-table.com/fr/sets/quotation-marks/" class="btn btn-success offset-1">Lien vers carctère pour css</a>
+            <!-- On peut le mettre dans tout le btn btn et peut être utile pour interrage avec javascript -->
+        </div>
+
+        <div class="mb-3 mt-3">
+            <button class="btn btn-outline-warning">Outline 1</button>
+            <button class="btn btn-outline-info">Outline 2</button>
+            <button class="btn btn-outline-success">Outline 3</button>
+        </div>
+
+        <!-- on peut styliser les check-box et les radios avec bootstrap -->
+        
+        <h5>Check-box boutton</h5>
+        <div class="mb-3 btn-group-toggle" data-toggle="buttons">
+            <!-- permet de mettre un boutton enfoncer avec js bootstrap! permet de garder et permet de laisser la couleur et etc-->
+            <div>
+                <label class="btn btn-outline-info">
+                    <input type="checkbox">Check
+                </label>
+            </div>
+        </div>
+        
+        <h5>Radio boutton</h5>
+        <div class="mb-3 btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-info">
+                <input type="radio" name="demo">Choix1
+            </label>
+            <label class="btn btn-outline-warning">
+                <input type="radio" name="demo">Choix2
+            </label>
+            <label class="btn btn-outline-danger">
+                <input type="radio" name="demo">Choix3
+            </label>
+
+        </div>
+
+    
+    
+    </div>
+</body>
+</html>

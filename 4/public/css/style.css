@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 70%;
+    margin: auto;
+    padding:0;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+figure{
+    width: 80%;
+}
+figcaption{
+    font-style: italic;
+    color: blanchedalmond;
+    background-color: black;
+    width: 100%;
+    margin-top: -6px;
+}
+details{
+    background-color:rgba(231, 104, 146, 0.629) ;
+    backface-visibility:0.5;
+}
+summary{
+    margin: 5px;
+}
+ul{
+    margin: 0%;
+}
+li{
+    font-style: italic;
+    font-weight: bold;
+}

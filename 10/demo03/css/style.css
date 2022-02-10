@@ -1,0 +1,23 @@
+ body{
+     background-color:rgb(150, 150, 250);
+ }
+ h1{
+     color:moccasin;
+ }
+
+ .french-quote::before{
+     content:'\201C';
+     /* met en rose uniquement le bonjour */
+     /* https://unicode-table.com/fr/ */
+     margin-right: 0.75rem;
+ }
+
+ .french-quote::after{
+     content:'\201E';
+     margin-left: 0.75rem;
+ }
+
+ .french-quote::after,.french-quote::before{
+     font-size: 40px;
+     color:hotpink;
+ }

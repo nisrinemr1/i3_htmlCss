@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo sur les formulaires</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <h1> Fomulaire d'inscription pour les cours de coréen </h1>
+
+    <h3>Veuillez compléter le formulaire ci-dessous.</h3>
+
+    <form action="#" method="POST">
+    <!-- pour envoyer le formulaire dans php et popur les pages il faut que ce soit avec le GET! -->
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" placeholder="Enter votre prénom"  required><br><br>
+
+        <label for="nom">Nom :</label>  
+        <input type="text" id="nom" placeholder="Enter votre nom" required><br><br>
+
+        <label for="sex">Sexe:</label>
+        <select name="gender" id="gender">
+            <option value="f">Femme</option>
+            <option value="m">Homme</option>
+            <option value="nc">N/C</option>
+        </select><br><br>
+
+        <label for="brirhtDate">Date de naissance : </label>
+        <input name="birthDate" value=" " type="date" required><br><br> 
+
+        <label for="adress">Adresse :</label>
+        <input type="text" id="adress" placeholder="Enter votre adress" required>
+        <input type="text" id="postCode" placeholder="Code postal : " required><!-- pour que le required fonctionne il faut qu'il y ait un boutton! -->
+        <input type="text" id="ville" placeholder="Ville : " required><br><br>
+        
+
+        <label for="telephonNumber">Téléphone : </label>
+        <input type="tel" id="telephonNumber"><br><br>
+
+        <label for="mail">Adresse mail : </label>
+        <input type="email" id="mail" required><br><br>
+
+        <label for="identityPic">Insérer une copie recto/verso de votre carte d'identitée ou votre titre de séjour: </label>
+        <input type="file" id="identityPic"> 
+        <input type="image"><br><br>
+
+        <label for="studiesLevel">Niveau d'études : </label><br><br>
+
+            <input type="checkbox" name="bachelor" value='bachelor'>
+            <label>Bachelier</label>
+            <br>
+            
+            <input type="checkbox" name="cess" value='cess'>
+            <label>Cess</label>
+            <br>
+
+            <input type="checkbox" name="ce1d" value='ce1d'>
+            <label>Ce1d</label>
+            <br>
+
+            <input type="checkbox" name="none">
+            <label for="none">None</label> <br><br>
+
+
+        <label for="question">Avez-vous déjà étudié le coréen?</label><br><br>
+
+        <input type="radio" name="korean" value="yes">
+        <label for="oui">Oui</label>
+        <input type="radio" name="korean" value="no">
+        <label for="no">Non</label><br><br>
+
+        <textarea name="korean" id="textkorean" cols="30" rows="10" placeholder="Souhaitez-vous nous informer d'avantage sur votre niveau en coréen."></textarea><br><br>
+
+        <label for="intensity">Choisissez la densité du cours:</label>
+
+            <select name="itensity" id="itnsity">
+                <option value="intensity1">Samedi de 9h à 13h</option>
+                <option value="intensity2">Samedi de 17h à 21h</option>
+                <option value="intensity3">Dimanche de 9h à 13h</option>
+                <option value="intensity4">Dimance de 17h à 21h</option>
+                <option value="intensity5">Samedi et Dimanche de 10h à 16h</option>
+            </select>
+
+
+
+        <br><br><input type="submit" value="Valider le formulaire">
+    </form>
+</body>
+</html>

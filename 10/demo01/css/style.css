@@ -1,0 +1,21 @@
+ 
+.elem1,.elem2,.elem3,.elem4,.elem5{
+    border:1px purple double;
+    margin-bottom: 2px;
+}
+
+.elem1{
+    background-color: violet;
+}
+.elem2{
+  background-color: aquamarine;  
+}
+.elem3{
+    background-color: lightblue;
+}
+.elem4{
+   background-color: pink; 
+}
+.elem5{
+    background-color: beige;
+}
